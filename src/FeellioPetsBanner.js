@@ -14,12 +14,16 @@ class FeellioPetsBannerFormGeneral extends React.Component {
     }
 
     render() {
-        const { img, alt, link } = this.props;
+        const { img, imgc, alt, link } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label htmlFor="img">Banner Image URL</label>
                     <input type="text" className="form-control" id="img" name="img" value={img} onChange={this.handleChange} placeholder="Enter the Banner image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="img">Banner caption Image URL</label>
+                    <input type="text" className="form-control" id="imgc" name="imgc" value={imgc} onChange={this.handleChange} placeholder="Enter the Banner caption image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt">alt</label>
@@ -42,7 +46,8 @@ class FeellioPetsBanner extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            img: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-carepets-background-banner-image.jpg', 
+            img: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-pets-b.jpg', 
+            imgc: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-pets-bc.png',
             alt: 'feellio-carepets-background-banner-image.jpg', 
             link: '#',
         };

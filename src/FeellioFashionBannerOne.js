@@ -14,12 +14,16 @@ class FeellioFashionBannerOneFormGeneral extends React.Component {
     }
 
     render() {
-        const { img, alt, link } = this.props;
+        const { img, captionImage, alt, link } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label htmlFor="img">Banner Image URL</label>
                     <input type="text" className="form-control" id="img" name="img" value={img} onChange={this.handleChange} placeholder="Enter the Banner image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="captionImage">Banner caption image URL</label>
+                    <input type="text" className="form-control" id="captionImage" name="captionImage" value={captionImage} onChange={this.handleChange} placeholder="Enter the Banner caption image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt">alt</label>
@@ -42,7 +46,8 @@ class FeellioFashionBannerOne extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            img: 'https://cdn11.bigcommerce.com/s-z57ig2u8p0/product_images/uploaded_images/feellio-feellio-bannner-01.jpg', 
+            img: 'https://cdn11.bigcommerce.com/s-z57ig2u8p0/product_images/uploaded_images/feellio-fashion-bo.jpg', 
+            captionImage: 'https://cdn11.bigcommerce.com/s-z57ig2u8p0/product_images/uploaded_images/feellio-fashion-boca.png',
             alt: 'feellio-feellio-bannner-01.jpg', 
             link: '#',
         };

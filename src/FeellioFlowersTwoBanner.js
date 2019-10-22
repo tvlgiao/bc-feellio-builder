@@ -13,12 +13,16 @@ class FeellioFlowersTwoBannerItemOne extends React.Component {
     }
 
     render() {
-        const { img1, alt1, link1, title1 } = this.props;
+        const { img1, imgc1, alt1, link1, title1 } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label htmlFor="img1">Banner image URL</label>
                     <input type="text" className="form-control" id="img1" name="img1" value={img1} onChange={this.handleChange} placeholder="Enter the banner image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="imgc1">Banner caption image URL</label>
+                    <input type="text" className="form-control" id="imgc1" name="imgc1" value={imgc1} onChange={this.handleChange} placeholder="Enter the banner caption image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt1">Banner image alt</label>
@@ -48,12 +52,16 @@ class FeellioFlowersTwoBannerItemTwo extends React.Component {
     }
 
     render() {
-        const { img2, alt2, link2, title2 } = this.props;
+        const { img2, imgc2, alt2, link2, title2 } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label htmlFor="img2">Banner image URL</label>
                     <input type="text" className="form-control" id="img2" name="img2" value={img2} onChange={this.handleChange} placeholder="Enter the banner image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="imgc2">Banner caption image URL</label>
+                    <input type="text" className="form-control" id="imgc2" name="imgc2" value={imgc2} onChange={this.handleChange} placeholder="Enter the banner caption image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt2">Banner image alt</label>
@@ -80,11 +88,13 @@ class FeellioFlowersTwoBanner extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            img1: 'https://cdn11.bigcommerce.com/s-agzbp14fso/product_images/uploaded_images/feellio-flowers-section-banner-two-01.jpg',
+            img1: 'https://cdn11.bigcommerce.com/s-agzbp14fso/product_images/uploaded_images/feellio-flowers-bt01.jpg',
+            imgc1: 'https://cdn11.bigcommerce.com/s-agzbp14fso/product_images/uploaded_images/feellio-flowers-btc01.png',
             alt1: 'feellio-flowers-section-banner-two-01.jpg',
             link1: '#',
             title1: '',
-            img2: 'https://cdn11.bigcommerce.com/s-agzbp14fso/product_images/uploaded_images/feellio-flowers-section-banner-two-02.jpg',
+            img2: 'https://cdn11.bigcommerce.com/s-agzbp14fso/product_images/uploaded_images/feellio-flowers-bt02.jpg',
+            imgc2: 'https://cdn11.bigcommerce.com/s-agzbp14fso/product_images/uploaded_images/feellio-flowers-btc02.png',
             alt2: 'feellio-flowers-section-banner-two-02.jpg',
             link2: '#',
             title2: '',

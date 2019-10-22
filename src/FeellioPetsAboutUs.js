@@ -14,12 +14,16 @@ class FeellioPetsAboutUsFormGeneral extends React.Component {
     }
 
     render() {
-        const { img, title, desc, buttonText, buttonLink } = this.props;
+        const { img, imgc, title, desc, buttonText, buttonLink } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label htmlFor="img">Banner Image URL</label>
                     <input type="text" className="form-control" id="img" name="img" value={img} onChange={this.handleChange} placeholder="Enter the Banner image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="img">Banner caption Image URL</label>
+                    <input type="text" className="form-control" id="imgc" name="imgc" value={imgc} onChange={this.handleChange} placeholder="Enter the Banner caption image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="title">Title</label>
@@ -50,7 +54,8 @@ class FeellioPetsAboutUs extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            img: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-carepets-banner.jpg', 
+            img: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-pets-au.jpg',
+            imgc: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-pets-auc.png', 
             title: 'About us', 
             desc: `This ancient Chinese healing method uses tiny needles to stimulate specific parts of your pet's body. Acupuncture can improve organ function, soothe muscles, get the blood flowing, and release feel-good hormones...`,
             buttonText: 'Read more',

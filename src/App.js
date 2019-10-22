@@ -15,6 +15,7 @@ import FeellioPetsOurWork from './FeellioPetsOurWork';
 import FeellioPetsOurProfessionals from './FeellioPetsOurProfessionals';
 import FeellioPetsContact from './FeellioPetsContact';
 import FeellioPetsBanner from './FeellioPetsBanner';
+import FeellioPetsBrands from './FeellioPetsBrands';
 import FeellioFurnitureProductOne from './FeellioFurnitureProductOne';
 import FeellioFurnitureProductTwo from './FeellioFurnitureProductTwo';
 import FeellioFurnitureFeatured from './FeellioFurnitureFeatured';
@@ -52,6 +53,7 @@ function App() {
         <FeellioPetsOurProfessionals title="Feellio Pets Our Professionals Section"/>,
         <FeellioPetsContact title="Feellio Pets Contact Section"/>,
         <FeellioPetsBanner title="Feellio Pets Banner Section"/>,
+        <FeellioPetsBrands title="Feellio Pets Brands Section"/>,
         <FeellioFurnitureProductOne title="Feellio Furniture Product 1 Section"/>,
         <FeellioFurnitureProductTwo title="Feellio Furniture Product 2 Section"/>,
         <FeellioFurnitureFeatured title="Feellio Furniture Featured Section"/>,

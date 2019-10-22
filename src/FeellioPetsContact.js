@@ -37,7 +37,7 @@ class FeellioPetsContact extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            img: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-carepets-background-contact-us.jpg',
+            img: 'https://cdn11.bigcommerce.com/s-q6xkae5hk1/product_images/uploaded_images/feellio-pets-c.jpg',
             heading: 'Contact',
         };
     }
