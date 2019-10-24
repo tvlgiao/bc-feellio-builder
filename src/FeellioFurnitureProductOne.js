@@ -40,7 +40,7 @@ class FeellioFurnitureProductOne extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            product_id: '115',
+            product_id: '119',
             image_position: 'left'
         };
     }
