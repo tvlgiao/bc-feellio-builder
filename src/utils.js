@@ -15,7 +15,7 @@ export function SectionConfigLayout(props) {
         <div className={props.elClass}>
             <div className="card">
                 <div className="card-header">
-                    <h3>{props.title}</h3>
+                    <h3>{props.title} ({props.sectionKey})</h3>
                 </div>
                 <div className="card-body">
                     <div className="row">

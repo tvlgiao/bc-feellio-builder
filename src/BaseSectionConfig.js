@@ -17,6 +17,10 @@ class BaseSectionConfig extends React.Component {
         return this.props.title || this.defaultTitle;
     }
 
+    get sectionKey() {
+        return this.props.sectionKey || '';
+    }
+
     setState() {
         this.onSaveState();
         return super.setState(...arguments);

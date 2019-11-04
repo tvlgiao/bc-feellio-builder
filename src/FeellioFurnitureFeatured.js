@@ -101,7 +101,7 @@ class FeellioFurnitureFeatured extends BaseSectionConfig {
     render() {
         const data = Buffer.from(JSON.stringify(this.state)).toString('base64');
         return (
-            <SectionConfigLayout elClass="feellioFurnitureFeatured" title={this.title} 
+            <SectionConfigLayout elClass="feellioFurnitureFeatured" title={this.title} sectionKey={this.sectionKey}
                 panels={[
                     {
                         title: "General",

@@ -61,7 +61,7 @@ class FeellioFlowersBannerParallax extends BaseSectionConfig {
     render() {
         const data = Buffer.from(JSON.stringify(this.state)).toString('base64');
         return (
-            <SectionConfigLayout elClass="feellioFlowersBannerParallax" title={this.title} 
+            <SectionConfigLayout elClass="feellioFlowersBannerParallax" title={this.title} sectionKey={this.sectionKey}
                 panels={[
                     {
                         title: "General",

@@ -151,7 +151,7 @@ class FeellioFurnitureBannerVideo extends BaseSectionConfig {
     render() {
         const data = Buffer.from(JSON.stringify(this.state)).toString('base64');
         return (
-            <SectionConfigLayout elClass="feellioFurnitureBannerVideo" title={this.title} 
+            <SectionConfigLayout elClass="feellioFurnitureBannerVideo" title={this.title} sectionKey={this.sectionKey}
                 panels={[
                     {
                         title: "General",

@@ -105,7 +105,7 @@ class FeellioCustomPageStoreLocator extends BaseSectionConfig {
     render() {
         const data = Buffer.from(JSON.stringify(this.state)).toString('base64');
         return (
-            <SectionConfigLayout elClass="feellioCustomPageStoreLocator" title={this.title} 
+            <SectionConfigLayout elClass="feellioCustomPageStoreLocator" title={this.title} sectionKey={this.sectionKey}
                 panels={[
                     {
                         title: "General",

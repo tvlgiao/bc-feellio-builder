@@ -137,7 +137,7 @@ class FeellioFlowersContactInfo extends BaseSectionConfig {
     render() {
         const data = Buffer.from(JSON.stringify(this.state)).toString('base64');
         return (
-            <SectionConfigLayout elClass="feellioFlowersContactInfo" title={this.title} 
+            <SectionConfigLayout elClass="feellioFlowersContactInfo" title={this.title} sectionKey={this.sectionKey}
                 panels={[
                     {
                         title: "General",

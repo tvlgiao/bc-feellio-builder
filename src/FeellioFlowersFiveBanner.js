@@ -236,7 +236,7 @@ class FeellioFlowersFiveBanner extends BaseSectionConfig {
     render() {
         const data = Buffer.from(JSON.stringify(this.state)).toString('base64');
         return (
-            <SectionConfigLayout elClass="feellioFlowersFiveBanner" title={this.title} 
+            <SectionConfigLayout elClass="feellioFlowersFiveBanner" title={this.title} sectionKey={this.sectionKey}
                 panels={[
                     {
                         title: 'Banner item 1',
